@@ -15,6 +15,17 @@
   --backgroundPage: #7C3AED;
   --backgroundMainPage: #FBFAFF;
   --itemsColor: #CAB3FF;
+  --h1Color: #403937;
+  --filterButtonBackground: #7C3AED;
+  --textShadow: rgba(22, 22, 22, 0.1);
+  --borderInput: #E3E3E3;
+  --searchIconColor: #505059;
+  --placeHolderColor: #7C7C8A;
+  --stepTasksColor: #403937;
+  --titleCardColor: #403937;
+  --contentCardColor: #756966;
+  --tagsCardColor: #7C3AED;
+  --spanTagsCardBackground: #E2D6FF;
 }
 
 body {
@@ -70,4 +81,151 @@ main .inner {
   height: 100%;
   background-color: var(--backgroundMainPage);
   border-top-left-radius: 3.2rem;
+  padding: 4.8rem 3.2rem;
+}
+
+section.title-avatar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.1rem 2.4rem;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 3.2rem;
+  color: var(--h1Color);
+}
+
+.title-avatar > img {
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 50%;
+}
+
+/*==== SECTION FILTRO ===*/
+
+section.filter{
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 3.2rem;
+  padding: 0 2.4rem;
+}
+
+.filter button {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  padding: 1.2rem 3.2rem;
+  border: 0;
+  border-radius: 0.5rem;
+  background-color: var(--filterButtonBackground);
+  color: var(--basic-white);
+}
+
+.filter button span {
+  font-size: 1.4rem;
+  text-shadow: .0rem .4rem 1.6rem var(--textShadow);
+}
+
+.filter button ion-icon {
+  font-size: 2.4rem;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  background-color: var(--basic-white);
+  border: 0.07rem solid var(--borderInput);
+  box-shadow: .0rem .4rem 1.6rem var(--textShadow);
+  border-radius: .8rem;
+  padding: 0 2.4rem;
+
+  flex: 1; /*É filho do filter*/
+}
+
+.input-wrapper ion-icon {
+  font-size: 2.4rem;
+  color: var(--searchIconColor);
+}
+
+.input-wrapper input {
+  border: 0;
+  width: 100%;
+  outline: 0;
+}
+
+.input-wrapper:has(:focus) {
+  outline: .2rem solid var(--searchIconColor);
+}
+
+.input-wrapper input::placeholder {
+  font-size: 1.6rem;
+  color: var(--placeHolderColor);
+}
+
+/*==== SECTION KANBAN ===*/
+section.kanban {
+  display: flex;
+  gap: 4.8rem;
+  padding-top: 3.2rem;
+}
+
+section.kanban > *{
+  flex: 1;
+  padding: 2.4rem;
+}
+
+section.kanban h2{
+  font-size: 2rem;
+  color: var(--stepTasksColor);
+  padding: 2.4rem 0;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.card{
+  padding: 2.4rem;
+  background-color: var(--basic-white);
+  box-shadow: .0rem .4rem 1.6rem var(--textShadow);
+  border-radius: 0.8rem;
+  line-height: 130%;
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  color: var(--titleCardColor);
+}
+
+.card p {
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: var(--contentCardColor);
+  margin-top: 1rem;
+}
+
+.card .tags{
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--tagsCardColor);
+  font-weight: 500;
+}
+
+.card .tags span{
+  font-size: 1.1rem;
+  line-height: 130%;
+  background-color: var(--spanTagsCardBackground);
+  border-radius: 0.8rem;
+  padding: 0.4rem 0.8rem;
 }
