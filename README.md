@@ -42,6 +42,7 @@ O layout da aplicação está disponível no Figma:
 - [ ] Implementar o funcionamento do botão de filtro
 - [ ] Implementar o funcionamento do botão de search 
 - [ ] Implementar a funcionalidade de Drag and Drop para que seja possível arrastar os cards entre as raias.
+- [ ] Implementar o botão de adicionar tarefas.
 - [ ] Implementar a parte de detalhamento dos Cards, com as seguintes informações:
     - Título
     - Data de Solicitação
