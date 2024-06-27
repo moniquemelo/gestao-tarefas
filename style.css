@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+
+  --basic-white: white;
+
+  --backgroundPage: #7C3AED;
+  --backgroundMainPage: #FBFAFF;
+  --itemsColor: #CAB3FF;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--backgroundPage);
+}
+
+#app{
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  min-height: 100vh;
+}
+
+nav {
+  padding: 3.2rem 2.7rem 0 3.5rem;
+}
+
+ul {
+  margin-top: 6rem;
+  list-style: none;
+  display: grid;
+  gap: 3.6rem;
+  min-width: 11.5rem;
+}
+
+li a {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  color: var(--itemsColor);
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.active,
+a:hover{
+  color: var(--basic-white);
+  font-weight: 700; 
+}
+
+a ion-icon{
+  font-size: 2rem;
+}
+
+main {
+  padding-top: 0.8rem;
+}
+
+main .inner {
+  height: 100%;
+  background-color: var(--backgroundMainPage);
+  border-top-left-radius: 3.2rem;
+}
