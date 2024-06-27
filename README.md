@@ -36,7 +36,7 @@ O layout da aplicação está disponível no Figma:
 
 ---
 
-## ⚙️ Funcionalidades Implementadas
+## ⚙️ Funcionalidades Futuras
 
 - [ ] Adaptar todo o código para utilizar o framework React (com Vite).
 - [ ] Implementar o funcionamento do botão de filtro
@@ -50,6 +50,7 @@ O layout da aplicação está disponível no Figma:
     - Opção de marcar como Concluído
     - Adicionar Subtarefas
     - Comentários
+- [ ] Utilização do Firebase para compor o backend da aplicação
 
 
 ---
