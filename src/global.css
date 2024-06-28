@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+
+  --basic-white: white;
+
+  --backgroundPage: #7C3AED;
+  --backgroundMainPage: #FBFAFF;
+  --itemsColor: #CAB3FF;
+  --h1Color: #403937;
+  --filterButtonBackground: #7C3AED;
+  --textShadow: rgba(22, 22, 22, 0.1);
+  --borderInput: #E3E3E3;
+  --searchIconColor: #505059;
+  --placeHolderColor: #7C7C8A;
+  --stepTasksColor: #403937;
+  --titleCardColor: #403937;
+  --contentCardColor: #756966;
+  --tagsCardColor: #7C3AED;
+  --spanTagsCardBackground: #E2D6FF;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--backgroundPage);
+}
+
+#app{
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  min-height: 100vh;
+}
+
+main {
+  padding-top: 0.8rem;
+}
+
+main .inner {
+  height: 100%;
+  background-color: var(--backgroundMainPage);
+  border-top-left-radius: 3.2rem;
+  padding: 4.8rem 3.2rem;
+}

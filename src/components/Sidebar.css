@@ -1,0 +1,33 @@
+nav {
+  padding: 3.2rem 2.7rem 0 3.5rem;
+}
+
+ul {
+  margin-top: 6rem;
+  list-style: none;
+  display: grid;
+  gap: 3.6rem;
+  min-width: 11.5rem;
+}
+
+li a {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  color: var(--itemsColor);
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.active,
+a:hover{
+  color: var(--basic-white);
+  font-weight: 700; 
+}
+
+a ion-icon{
+  font-size: 2rem;
+}
