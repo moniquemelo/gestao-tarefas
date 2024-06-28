@@ -38,11 +38,13 @@ O layout da aplicação está disponível no Figma:
 
 ## ⚙️ Funcionalidades Futuras
 
-- [ ] Adaptar todo o código inicial para utilizar o framework React (com Vite).
-- [ ] Implementar o funcionamento do botão de filtro
+- [x] Adaptar todo o código inicial para utilizar o framework React (com Vite).
+- [ ] Implementar o funcionamento do botão de filtragem dos cards
 - [ ] Implementar o funcionamento do botão de search 
 - [ ] Implementar a funcionalidade de Drag and Drop para que seja possível arrastar os cards entre as raias.
-- [ ] Implementar o botão de adicionar tarefas, permitindo que o usuário consiga colocar um titulo e uma descrição de forma rápida.
+- [x] Implementar o botão de adicionar tarefas, permitindo que o usuário consiga colocar um titulo de forma rápida.
+- [x] Implementar uma pequena mensagem de erro para o usuário caso ele não adicione um titulo para sua tarefa.
+- [x] Implementar o ícone de lixeiras em cada card com a lógica para remover cards.
 - [ ] Implementar a parte de detalhamento dos Cards, com as seguintes informações:
     - Título
     - Data de Solicitação
