@@ -45,6 +45,11 @@ section.kanban h2 ion-icon:hover{
   line-height: 130%;
 }
 
+.card .title-trash {
+  display: flex;
+  justify-content: space-between;;
+}
+
 .card h3 {
   font-size: 1.4rem;
   color: var(--titleCardColor);
@@ -100,5 +105,6 @@ section.kanban h2 ion-icon:hover{
 }
 
 .new-card-form button:hover {
-  background-color: darken(var(--tagsCardColor), 10%);
+  background-color: var(--tagsCardColor);
+  opacity: 0.8;
 }
